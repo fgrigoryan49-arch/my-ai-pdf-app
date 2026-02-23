@@ -8,7 +8,7 @@ st.title("🤖 Իմ AI Օգնական")
 st.write("Բեռնիր PDF ֆայլը և տուր քո հարցը:")
 
 # 2. Միացնում ենք Gemini API-ն (Քո բանալին դիր այստեղ)
-genai.configure(api_key="AIzaSyAeLl_9xYTI1DNaIcm5Na2CfDiI_i_e9gc")
+genai.configure(api_key="YOUR_GEMINI_API_K")
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # 3. Ֆայլի բեռնման դաշտ
@@ -40,4 +40,5 @@ if uploaded_file is not None:
     except Exception as e:
         st.error(f"Տեղի է ունեցել սխալ: {e}")
 else:
+
     st.info("Խնդրում եմ բեռնել PDF ֆայլ՝ հարցեր տալու համար:")
